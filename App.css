@@ -1,0 +1,484 @@
+/* ─── Odyssey Design Tokens — Monochromatic (Cream & Black) ── */
+
+:root {
+  /* Warm travel palette: cream, ocean teal, sky blue and sunset coral */
+  --color-bg:             #FFF9EF;
+  --color-surface:        #FFF9EF;
+  --color-surface-dark:   #18324A;
+  --color-border:         rgba(24, 50, 74, 0.34);
+  --color-border-subtle:  rgba(24, 50, 74, 0.16);
+  --color-border-muted:   rgba(24, 50, 74, 0.34);
+
+  --color-text:           #18324A;
+  --color-text-inverse:   #FFF9EF;
+  --color-text-muted:     #526779;
+  --color-text-dim:       #82909A;
+
+  /* Spacing Scale */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+
+  --text-2xs: 0.6875rem;
+  --text-xs:  0.75rem;
+  --text-sm:  0.875rem;
+  --text-md:  1rem;
+  --text-lg:  1.125rem;
+  --text-xl:  1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+  --text-5xl: 3.75rem;
+
+  /* Borders & Radius — Clean & Crisp */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+
+  /* Transitions — Subtle & Calm */
+  --transition-fast:   120ms ease;
+  --transition-normal: 200ms ease;
+}
+
+/* ─── App Layout ───────────────────────────────────────── */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg) var(--space-4xl);
+}
+
+/* ─── Page: Home ───────────────────────────────────────── */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  width: 100%;
+}
+
+.home__hero {
+  text-align: center;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__brand-eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-md);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.home__brand-eyebrow::before,
+.home__brand-eyebrow::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+.home__title {
+  font-size: var(--text-5xl);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+  text-transform: uppercase;
+}
+
+.home__tagline {
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.home__subtitle {
+  font-size: var(--text-md);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* Submit Error Banner (Monochrome) */
+.submit-error-banner {
+  width: 100%;
+  max-width: 720px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.close-alert-btn {
+  background: transparent;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  padding: 0 var(--space-xs);
+  line-height: 1;
+  opacity: 0.6;
+  transition: opacity var(--transition-fast);
+}
+
+.close-alert-btn:hover {
+  opacity: 1;
+}
+
+/* ─── Health Status Card (Discreet Editorial Footnote) ──── */
+
+.health-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  padding: var(--space-md) var(--space-lg);
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-top: var(--space-xl);
+}
+
+.health-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.health-card__title {
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-dim);
+}
+
+.health-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 2px 8px;
+  border: 1px solid var(--color-border);
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.health-card__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--color-text);
+}
+
+.health-card__badge--ok .health-card__dot {
+  background-color: #18324A;
+}
+
+.health-card__badge--error .health-card__dot {
+  background-color: transparent;
+  border: 1px solid #18324A;
+}
+
+.health-card__details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2xs) var(--space-md);
+  font-size: var(--text-xs);
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: var(--space-xs);
+  margin-top: var(--space-2xs);
+}
+
+.health-card__label {
+  color: var(--color-text-dim);
+  font-weight: 500;
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.health-card__value {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+}
+
+/* ─── Capabilities Grid ────────────────────────────────── */
+
+.features {
+  width: 100%;
+  max-width: 880px;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-2xl);
+  margin-top: var(--space-xl);
+}
+
+.features__title {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-text-dim);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.feature-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: var(--space-lg) var(--space-md);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  background-color: #18324A;
+  color: #FFF9EF;
+}
+
+.feature-card:hover .feature-card__desc {
+  color: rgba(255, 253, 242, 0.75);
+}
+
+.feature-card__num {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.feature-card__name {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.feature-card__desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  transition: color var(--transition-fast);
+}
+
+/* ─── Responsive Media Queries ─────────────────────────── */
+
+@media (max-width: 880px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .home {
+    padding-top: var(--space-lg);
+    gap: var(--space-2xl);
+  }
+
+  .home__title {
+    font-size: var(--text-4xl);
+  }
+
+  .home__tagline {
+    font-size: var(--text-xl);
+  }
+
+  .home__subtitle {
+    font-size: var(--text-sm);
+  }
+
+  .app-main {
+    padding: var(--space-md) var(--space-md) var(--space-2xl);
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ─── Colorful Odyssey theme ───────────────────────────── */
+:root {
+  --odyssey-teal: #087F8C;
+  --odyssey-blue: #3978C5;
+  --odyssey-coral: #F0785A;
+  --odyssey-gold: #E8B44C;
+  --odyssey-mint: #DDF3EA;
+}
+
+html, body, #root, .app {
+  background:
+    radial-gradient(ellipse at 8% 8%, rgba(8, 127, 140, 0.09), transparent 30%),
+    radial-gradient(ellipse at 92% 22%, rgba(240, 120, 90, 0.10), transparent 26%),
+    #FFF9EF;
+}
+
+.header {
+  background: rgba(255, 249, 239, 0.94);
+  border-bottom-color: rgba(8, 127, 140, 0.28);
+  backdrop-filter: blur(12px);
+}
+
+.header__logo-text,
+.home__title {
+  background: linear-gradient(100deg, #18324A 15%, #087F8C 58%, #3978C5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header__link {
+  border-color: #087F8C;
+  color: #087F8C;
+  border-radius: 7px;
+}
+.header__link:hover {
+  background: #087F8C;
+  color: #fff;
+}
+
+.home__brand-eyebrow { color: #087F8C; }
+.home__brand-eyebrow::before,
+.home__brand-eyebrow::after { background: #F0785A; }
+
+.trip-form,
+.health-card,
+.feature-card,
+.trip-header-card,
+.chat-panel,
+.budget-summary {
+  border-radius: 14px;
+  border-color: rgba(8, 127, 140, 0.22);
+  box-shadow: 0 12px 34px rgba(24, 50, 74, 0.06);
+}
+
+.trip-form {
+  background: linear-gradient(145deg, rgba(255,255,255,0.92), rgba(240,250,247,0.92));
+}
+
+.form-input {
+  border-color: #C7D7D9;
+  border-radius: 8px;
+}
+.form-input:focus {
+  border-color: #087F8C;
+  box-shadow: 0 0 0 3px rgba(8,127,140,0.12);
+}
+.suggestion-chip {
+  border-radius: 999px;
+  border-color: #C6DFDA;
+}
+.suggestion-chip:hover {
+  background: #DDF3EA;
+  border-color: #087F8C;
+}
+.suggestion-chip.active,
+.interest-pill.selected {
+  background: #087F8C;
+  border-color: #087F8C;
+  color: #fff;
+}
+.budget-card {
+  border-radius: 10px;
+  border-color: #D5DFE2;
+}
+.budget-card.selected {
+  background: linear-gradient(135deg, #087F8C, #3978C5);
+  border-color: #087F8C;
+  color: #fff;
+}
+.stepper-btn:hover:not(:disabled) {
+  background: #087F8C;
+  color: #fff;
+}
+.form-actions button,
+button[type="submit"],
+.generate-btn,
+.primary-btn {
+  border-radius: 8px;
+}
+.feature-card {
+  background: linear-gradient(145deg, #FFFFFF, #F0F8F5);
+}
+.feature-card:hover {
+  background: linear-gradient(135deg, #087F8C, #3978C5);
+  color: #fff;
+}
+.feature-card:hover .feature-card__desc { color: rgba(255,255,255,.82); }
+
+.export-pdf-btn, .footer-export-btn, .cost-badge {
+  background: #087F8C;
+  border-color: #087F8C;
+  color: #fff;
+  border-radius: 7px;
+}
+.export-calendar-btn, .footer-calendar-btn {
+  border-color: #3978C5;
+  color: #3978C5;
+  border-radius: 7px;
+}
+.export-calendar-btn:hover:not(:disabled),
+.footer-calendar-btn:hover:not(:disabled) {
+  background: #3978C5;
+  border-color: #3978C5;
+  color: #fff;
+}
+.total-days-badge, .version-tag { border-radius: 999px; }
+::selection { background: #087F8C; color: #fff; }
+
+@media (max-width: 640px) {
+  .trip-form { padding: 1.5rem 1rem; }
+}
