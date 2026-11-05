@@ -103,7 +103,6 @@ graph TB
     Controllers -.-> Models
     APIClient -.-> Models
 ```
-
 ### Workspace Organization
 * `@travel-planner/client` (`client/`): React 18 SPA with Vite, CSS variables, monochrome design system, and Leaflet mapping.
 * `@travel-planner/server` (`server/`): Express REST API, SQLite persistence via `node:sqlite`, Puppeteer PDF rendering, and ICS generation.
@@ -235,67 +234,3 @@ Configured in `server/.env` (copied from `server/.env.example`):
 
 ## 10. API Endpoints
 
-All endpoints are prefixed with `/api`:
-
-| Method | Endpoint | Description | Request Body |
-|---|---|---|---|
-| `GET` | `/api/health` | Service uptime and health check | None |
-| `POST` | `/api/trips` | Create trip and generate initial itinerary | `{ destination, durationDays, budget, interests }` |
-| `GET` | `/api/trips/:id` | Retrieve trip, latest itinerary, and chat history | None |
-| `POST` | `/api/trips/:tripId/generate` | Regenerate itinerary | None |
-| `POST` | `/api/trips/:tripId/refine` | Conversationally refine active itinerary | `{ message: string }` |
-| `GET` | `/api/trips/:tripId/export/pdf` | Download print-ready A4 PDF document | None |
-| `GET` | `/api/trips/:tripId/export/calendar` | Download standard RFC 5545 `.ics` file | None |
-| `GET` | `/api/trips/:tripId/geocode` | Get resolved lat/lng coordinates for map | None |
-
----
-
-## 11. Demo Workflow
-
-### Test Scenario: Tokyo 5-Day Trip
-1. **Trip Input**:
-   - Destination: `Tokyo, Japan`
-   - Duration: `5 days`
-   - Budget Tier: `Mid-range`
-   - Interests: `Food`, `History`
-   - Click **"Generate Itinerary"**.
-2. **View Itinerary**:
-   - Inspect Day 1 through Day 5 tabs.
-   - Verify activity timings, locations, estimated costs, and travel connectors (e.g. `20 min by subway`).
-   - Check the **Estimated Budget Breakdown** with category spend distribution.
-3. **Interactive Map**:
-   - Click **"🗺️ Map"** toggle to see day-colored markers across Tokyo.
-   - Click an activity to highlight its pin, or click a map pin to view the activity popup card.
-4. **Conversational Refinement**:
-   - Open the chat drawer on the right.
-   - Send: `"Make day 2 less packed and add more food spots."`
-   - AI updates the itinerary to **v2**. Day 2 is adjusted while Day 1, 3, 4, and 5 are preserved.
-5. **Persistence Verification**:
-   - Refresh the browser (`F5`).
-   - The updated **v2** itinerary and chat history persist directly from SQLite.
-6. **Multi-Format Exports**:
-   - Click **"Download PDF Itinerary"** → Generates styled A4 PDF of the refined v2 schedule.
-   - Click **"Add to Calendar (.ics)"** → Generates valid `.ics` calendar file for importing into Google/Apple Calendar.
-
----
-
-## 12. Known Limitations
-
-1. **Nominatim Public Geocoding Rate Limits**: OpenStreetMap's Nominatim allows 1 request per second. The backend uses a local queue and persistent SQLite cache (`geocode_cache`) to avoid rate limiting.
-2. **Headless Chromium in Docker/Linux**: PDF generation uses Puppeteer. In containerized environments, Linux system font/sandbox packages (`libnss3`, `libxss1`) must be present.
-3. **Very Long Itineraries (>21 Days)**: Itineraries with >21 days and extensive chat iterations may approach token limits on compact models; 1 to 14 days provides the fastest response times.
-
----
-
-## 13. Future Improvements
-
-* **Multi-City Routing**: Support multi-city travel legs with inter-city high-speed rail and flight logistics.
-* **Live Pricing Integrations**: Real-time accommodation and flight pricing via Google Flights / Booking APIs.
-* **Shareable Trip Links**: Read-only public URLs to share itineraries with travel companions.
-* **Offline PWA Support**: Service worker caching for viewing schedules and map coordinates offline during transit.
-
----
-
-## License
-
-MIT © 2026 Odyssey Contributors.
