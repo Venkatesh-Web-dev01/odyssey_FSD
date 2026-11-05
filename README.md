@@ -110,7 +110,6 @@ graph TB
 
 ---
 
-## 6. AI Architecture & Prompt Engineering
 
 ### 1. Canonical Schema Enforcement
 OpenAI completions are called with `response_format: { type: "json_object" }`. Every output must strictly conform to:
