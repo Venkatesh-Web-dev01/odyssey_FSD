@@ -111,4 +111,15 @@ Start the Development Server:
 Bash
 npm run dev
 
+🤝 Contributing
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AwesomeFeature)
+
+Commit your Changes (git commit -m 'Add some AwesomeFeature')
+
+Push to the Branch (git checkout -origin feature/AwesomeFeature)
+
+Open a Pull Request
+
 
