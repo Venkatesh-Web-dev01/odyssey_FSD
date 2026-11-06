@@ -40,3 +40,16 @@ Interactive Visualization & Mapping: MapView.jsx communicates with geocodingServ
 AI Travel Assistant: ChatPanel.jsx lets users refine their plans in real-time by chatting with the AI travel connector.
 
 Budget & Exports: BudgetSummary.jsx calculates expenses, while pdfService.js allows users to export full itineraries offline and calendarService.js syncs trip events to calendar applications.
+
+✨ Features
+🧠 AI-Driven Itinerary Generation: Fast, personalized multi-day trip itineraries tailored to user preferences.
+
+🗺️ Interactive Map Navigation: Geocoding and location plotting for seamless navigation between destinations.
+
+💬 Interactive AI Chat: Fine-tune itinerary details dynamically through an in-app chat widget.
+
+💰 Budget Tracker: Keep track of estimated costs across accommodation, travel, food, and activities.
+
+📅 Calendar Sync: Directly sync generated itineraries to Google Calendar.
+
+📄 PDF Export: Generate downloadable, print-friendly PDF itineraries.
