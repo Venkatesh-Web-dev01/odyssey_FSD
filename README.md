@@ -79,3 +79,36 @@ odyssey_FSD/
     ├── vite.config.js           # Vite builder setup
     └── env.example              # Environment variables template
 
+🚀 Getting Started
+Prerequisites
+Node.js (v18.x or higher)
+
+npm or yarn
+
+Installation
+Clone the Repository:
+
+Bash
+git clone [https://github.com/Venkatesh-Web-dev01/odyssey_FSD.git](https://github.com/Venkatesh-Web-dev01/odyssey_FSD.git)
+cd odyssey_FSD
+Install Dependencies:
+
+Bash
+npm install
+Configure Environment Variables:
+Copy the env.example file to create a .env file:
+
+Bash
+cp env.example .env
+Fill in your required API keys (AI Provider, Map/Geocoding API, Database URL, etc.).
+
+Run Database Migrations (if applicable):
+
+Bash
+node migrations.js
+Start the Development Server:
+
+Bash
+npm run dev
+
+
