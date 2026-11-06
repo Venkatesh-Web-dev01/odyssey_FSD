@@ -53,3 +53,29 @@ Budget & Exports: BudgetSummary.jsx calculates expenses, while pdfService.js all
 📅 Calendar Sync: Directly sync generated itineraries to Google Calendar.
 
 📄 PDF Export: Generate downloadable, print-friendly PDF itineraries.
+
+odyssey_FSD/
+├── Frontend Components
+│   ├── HomePage.jsx             # Landing & main dashboard
+│   ├── TripForm.jsx             # Initial trip query input form
+│   ├── TripPage.jsx             # Main itinerary dashboard
+│   ├── MapView.jsx / .css       # Map plotting & interactive route views
+│   ├── ChatPanel.jsx / .css     # AI chat panel for trip tweaks
+│   ├── BudgetSummary.jsx / .css # Financial breakdown of the trip
+│   ├── TravelConnector.jsx      # Connector logic for travel data
+│   └── ItinerarySkeleton.jsx   # UI loading skeletons
+│
+├── Backend & Services
+│   ├── index.js                 # Server entry point
+│   ├── tripRoutes.js            # API routing for trip operations
+│   ├── tripController.js        # Controller logic for trip processing
+│   ├── itineraryAIService.js    # AI prompt engineering & integration
+│   ├── geocodingService.js      # Map coordinate lookup & resolution
+│   ├── calendarService.js       # Calendar event generation & sync
+│   ├── pdfService.js            # PDF compilation engine
+│   └── database.js              # Database connection setup
+│
+└── Configuration
+    ├── vite.config.js           # Vite builder setup
+    └── env.example              # Environment variables template
+
