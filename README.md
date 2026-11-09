@@ -4,33 +4,7 @@ Odyssey FSD is an AI-powered, full-stack travel itinerary generator and trip man
 
 ---
 
-## 🎨 System Architecture & Diagrammatic Concept
 
-### High-Level Architecture Flow
-
-```text
-  ┌────────────────────────────────────────────────────────┐
-  │                   Frontend (React + Vite)              │
-  │  [HomePage] ──► [TripForm] ──► [TripPage]              │
-  │                                   ├── [MapView]        │
-  │                                   ├── [ChatPanel]      │
-  │                                   └── [BudgetSummary]  │
-  └───────────────────────────┬────────────────────────────┘
-                              │ REST API Requests
-                              ▼
-  ┌────────────────────────────────────────────────────────┐
-  │                    Backend (Node.js/Express)           │
-  │  [tripRoutes] ──► [tripController] ──► [database.js]   │
-  │  [geocodeRoutes] ──► [geocodingService]                │
-  └─────────────┬───────────────────────────┬──────────────┘
-                │                           │
-                ▼                           ▼
-  ┌──────────────────────────┐  ┌──────────────────────────┐
-  │    External Services     │  │   Third-Party Integrations│
-  │  • itineraryAIService    │  │  • Map/Geocoding API     │
-  │  • calendarService       │  │  • Google Calendar API   │
-  │  • pdfService            │  │                          │
-  └──────────────────────────┘  └──────────────────────────┘
 
 Core Concept & Workflow
 Trip Creation & AI Generation: Users input trip details (destination, dates, budget, preferences) via TripForm.jsx. The request hits itineraryAIService.js, which dynamically generates a personalized itinerary.
