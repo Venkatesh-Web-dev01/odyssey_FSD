@@ -119,3 +119,16 @@ Interactive Mapping & Routing: Daily activities and destinations are auto-geocod
 Real-Time AI Travel Assistant: An integrated chat interface allows users to tweak, refine, or ask for local recommendations dynamically without re-generating the entire trip from scratch.
 
 Budgeting & Export Integration: Features integrated expense tracking, Google Calendar synchronization for schedule management, and print-ready PDF export options for offline access on the road.
+
+Key Capabilities at a Glance
+🧠 AI Itinerary Engine: Rapid multi-day itinerary generation tuned to budgets and user interests.
+
+🗺️ Interactive Map Route Visualization: Visual route calculation and pin placement for daily activities.
+
+💬 Conversational Travel Assistant: In-app AI chat for quick plan adjustments and local insights.
+
+💰 Integrated Budget Tracking: Clear breakdown of estimated costs (stay, travel, food, events).
+
+📅 Google Calendar Sync: One-click integration to sync itineraries directly with personal schedules.
+
+📄 Offline PDF Export: Easily export clean, printable PDF documents for offline travel.
