@@ -111,4 +111,11 @@ odyssey_FSD/
 │     └─────────────────────────────┘                   └─────────────────────────────┘  │
 └────────────────────────────────────────────────────────────────────────────────────────┘
 
+💡 Core Vision & Workflow
+AI-Driven Planning: Users enter destination, dates, budget, and travel preferences. The backend AI engine processes the input to generate optimized multi-day itineraries tailored to individual travel styles.
 
+Interactive Mapping & Routing: Daily activities and destinations are auto-geocoded and mapped visually, allowing users to inspect locations and route navigation step-by-step.
+
+Real-Time AI Travel Assistant: An integrated chat interface allows users to tweak, refine, or ask for local recommendations dynamically without re-generating the entire trip from scratch.
+
+Budgeting & Export Integration: Features integrated expense tracking, Google Calendar synchronization for schedule management, and print-ready PDF export options for offline access on the road.
