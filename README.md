@@ -15,9 +15,7 @@ Odyssey FSD is an AI-powered, full-stack travel itinerary generator and trip man
 
 ---
 
-
-
-Core Concept & Workflow
+⚡Core Concept & Workflow
 Trip Creation & AI Generation: Users input trip details (destination, dates, budget, preferences) via TripForm.jsx. The request hits itineraryAIService.js, which dynamically generates a personalized itinerary.
 
 Interactive Visualization & Mapping: MapView.jsx communicates with geocodingService.js to place location markers and calculate routes for daily activities.
@@ -25,6 +23,21 @@ Interactive Visualization & Mapping: MapView.jsx communicates with geocodingServ
 AI Travel Assistant: ChatPanel.jsx lets users refine their plans in real-time by chatting with the AI travel connector.
 
 Budget & Exports: BudgetSummary.jsx calculates expenses, while pdfService.js allows users to export full itineraries offline and calendarService.js syncs trip events to calendar applications.
+
+<dl>
+  <dt><strong>🧠 AI-Driven Planning</strong></dt>
+  <dd>Enter your destination, dates, budget, and travel preferences. The backend AI engine processes your input to generate optimized multi-day itineraries tailored to your style.</dd>
+  <br/>
+  <dt><strong>🗺️ Interactive Mapping & Routing</strong></dt>
+  <dd>Daily activities and destinations are auto-geocoded and mapped visually, allowing you to inspect locations and step-by-step route navigation.</dd>
+  <br/>
+  <dt><strong>💬 Real-Time AI Travel Assistant</strong></dt>
+  <dd>An integrated chat interface lets you tweak, refine, or request local recommendations dynamically without starting over.</dd>
+  <br/>
+  <dt><strong>💰 Budgeting & Export Integration</strong></dt>
+  <dd>Features expense tracking, Google Calendar sync for schedule management, and print-ready PDF export options for offline travel access.</dd>
+</dl>
+
 
 ✨ Features
 🧠 AI-Driven Itinerary Generation: Fast, personalized multi-day trip itineraries tailored to user preferences.
