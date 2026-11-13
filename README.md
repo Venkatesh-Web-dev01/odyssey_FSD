@@ -2,6 +2,8 @@
 
 Odyssey FSD is an AI-powered, full-stack travel itinerary generator and trip management platform. It allows users to create customized travel plans, visualize routes with interactive maps, chat with an AI assistant for recommendations, manage trip budgets, export itineraries to PDF, and sync schedules with Google Calendar.
 Actually this repository is my Full Stack Development project.
+It is a travelling management platform.
+
 <p align="center">
   <strong>An AI-powered, full-stack travel itinerary generator and trip management platform.</strong>
 </p>
