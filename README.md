@@ -4,7 +4,7 @@ Odyssey FSD is an AI-powered, full-stack travel itinerary generator and trip man
 Actually this repository is my Full Stack Development project.
 It is a travelling management platform.
 it helps for travellers.
-
+And user for the travellers.
 
 <p align="center">
   <strong>An AI-powered, full-stack travel itinerary generator and trip management platform.</strong>
