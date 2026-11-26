@@ -120,7 +120,7 @@ Budget & Exports: BudgetSummary.jsx calculates expenses, while pdfService.js all
 
 Based on the files and README in the odyssey_FSD repository, it primarily uses JavaScript (along with HTML and CSS for the web interface), as indicated by:
 
-
+Frontend & UI files: .jsx (App.jsx, TripForm.jsx, MapView.jsx, ChatPanel.jsx, BudgetSummary.jsx, HomePage.jsx, TripPage.jsx, Header.jsx, ItinerarySkeleton.jsx, TravelConnector.jsx, main.jsx), .css, and index.html.
 
 
 Key Capabilities at a Glance
