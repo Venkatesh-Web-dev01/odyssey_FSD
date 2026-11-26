@@ -117,6 +117,12 @@ Budget & Exports: BudgetSummary.jsx calculates expenses, while pdfService.js all
 └────────────────────────────────────────────────────────────────────────────────────────┘
 
 
+
+Based on the files and README in the odyssey_FSD repository, it primarily uses JavaScript (along with HTML and CSS for the web interface), as indicated by:
+
+
+
+
 Key Capabilities at a Glance
 🧠 AI Itinerary Engine: Rapid multi-day itinerary generation tuned to budgets and user interests.
 
