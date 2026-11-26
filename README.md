@@ -123,6 +123,10 @@ Based on the files and README in the odyssey_FSD repository, it primarily uses J
 Frontend & UI files: .jsx (App.jsx, TripForm.jsx, MapView.jsx, ChatPanel.jsx, BudgetSummary.jsx, HomePage.jsx, TripPage.jsx, Header.jsx, ItinerarySkeleton.jsx, TravelConnector.jsx, main.jsx), .css, and index.html.
 
 
+Backend & service files: .js (api.js, calendarService.js, database.js, errorHandler.js, geocodeController.js, geocodingService.js, healthRoutes.js, itineraryAIService.js, migrations.js, pdfService.js, schemas.js, tripController.js, tripRoutes.js, tripService.js, vite.config.js, and index.js variants).
+
+
+
 Key Capabilities at a Glance
 🧠 AI Itinerary Engine: Rapid multi-day itinerary generation tuned to budgets and user interests.
 
