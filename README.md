@@ -154,7 +154,7 @@ Key Capabilities at a Glance
 📄 Offline PDF Export: Easily export clean, printable PDF documents for offline travel.
 
 | Capability | Description |
-| :--- | :--- |
+
 | **🧠 AI Itinerary Engine** | Rapid multi-day itinerary generation tuned to budgets and user interests. |
 | **🗺️ Map Route Visualization** | Visual route calculation and pin placement for daily activities. |
 | **💬 Conversational Assistant** | In-app AI chat for quick plan adjustments and local insights. |
