@@ -158,3 +158,8 @@ To run and develop the JavaScript codebase locally, install Node.js (which inclu
 Bash
 node -v
 npm -v
+
+3. Install project dependencies: From the repository folder containing package.json, install the required packages:
+
+Bash
+npm install
