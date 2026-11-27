@@ -148,3 +148,6 @@ Key Capabilities at a Glance
 | **💰 Budget Tracking** | Clear breakdown of estimated costs (stay, travel, food, events). |
 | **📅 Google Calendar Sync** | One-click integration to sync itineraries directly with personal schedules. |
 | **📄 Offline PDF Export** | Easily export clean, printable PDF documents for offline travel. |
+
+How to Install Node.js & JavaScript Runtime
+To run and develop the JavaScript codebase locally, install Node.js (which includes npm, the Node package manager):
