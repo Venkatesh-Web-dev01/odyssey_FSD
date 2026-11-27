@@ -151,3 +151,5 @@ Key Capabilities at a Glance
 
 How to Install Node.js & JavaScript Runtime
 To run and develop the JavaScript codebase locally, install Node.js (which includes npm, the Node package manager):
+
+1. Download Node.js: Get the current Long-Term Support (LTS) release from the official Node.js website, or install it via your OS package manager / version manager (nvm on macOS/Linux, nvm-windows or winget on Windows).
